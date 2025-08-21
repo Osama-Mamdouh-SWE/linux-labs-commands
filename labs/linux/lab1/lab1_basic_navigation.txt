@@ -1,0 +1,42 @@
+osama@linux:~$ pwd
+/home/osama
+
+osama@linux:~$ ls -la
+total 28
+drwxr-xr-x  3 osama osama 4096 Aug 21 09:30 .
+drwxr-xr-x  4 root  root  4096 Aug 20 15:00 ..
+-rw-r--r--  1 osama osama  220 Aug 20 15:00 .bash_logout
+-rw-r--r--  1 osama osama 3526 Aug 20 15:00 .bashrc
+drwx------  2 osama osama 4096 Aug 20 15:10 Documents
+-rw-r--r--  1 osama osama  807 Aug 20 15:00 .profile
+
+osama@linux:~$ cd /
+
+osama@linux:/$ ls -la
+total 84
+drwxr-xr-x  18 root root  4096 Aug 21 09:00 .
+drwxr-xr-x  18 root root  4096 Aug 21 09:00 ..
+lrwxrwxrwx   1 root root     7 Aug 20 14:50 bin -> usr/bin
+drwxr-xr-x   4 root root  4096 Aug 20 14:55 boot
+drwxr-xr-x  20 root root  4040 Aug 21 08:59 dev
+drwxr-xr-x  93 root root  4096 Aug 21 08:59 etc
+drwxr-xr-x   3 root root  4096 Aug 20 15:05 home
+lrwxrwxrwx   1 root root     7 Aug 20 14:50 lib -> usr/lib
+drwx------   2 root root 16384 Aug 20 14:49 lost+found
+drwxr-xr-x   2 root root  4096 Aug 20 14:50 media
+drwxr-xr-x   2 root root  4096 Aug 20 14:50 mnt
+drwxr-xr-x   2 root root  4096 Aug 20 14:50 opt
+dr-xr-xr-x 206 root root     0 Aug 21 08:59 proc
+drwx------   3 root root  4096 Aug 20 15:05 root
+drwxr-xr-x  23 root root   760 Aug 21 09:00 run
+lrwxrwxrwx   1 root root     8 Aug 20 14:50 sbin -> usr/sbin
+drwxr-xr-x   2 root root  4096 Aug 20 14:50 srv
+dr-xr-xr-x  13 root root     0 Aug 21 08:59 sys
+drwxrwxrwt   9 root root  4096 Aug 21 09:00 tmp
+drwxr-xr-x  14 root root  4096 Aug 20 14:50 usr
+drwxr-xr-x  12 root root  4096 Aug 20 14:55 var
+
+osama@linux:/$ cd ~
+
+osama@linux:~$ pwd
+/home/osama
