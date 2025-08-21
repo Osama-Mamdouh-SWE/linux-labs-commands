@@ -1,0 +1,16 @@
+osama@linux:~$ mkdir my_projects
+
+osama@linux:~$ cd my_projects
+
+osama@linux:~/my_projects$ mkdir documents scripts backup
+
+osama@linux:~/my_projects$ touch documents/readme.txt
+
+osama@linux:~/my_projects$ tree
+.
+├── backup
+├── documents
+│   └── readme.txt
+└── scripts
+
+3 directories, 1 file

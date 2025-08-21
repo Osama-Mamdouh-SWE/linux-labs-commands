@@ -1,0 +1,18 @@
+osama@linux:~$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:          7.7Gi       1.4Gi       5.2Gi       120Mi       1.1Gi       6.0Gi
+
+osama@linux:~$ lscpu | grep "Model name"
+Model name:            Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
+
+osama@linux:~$ uptime
+ 12:30:53 up  1:28,  1 user,  load average: 0.05, 0.03, 0.00
+
+osama@linux:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        50G   25G   23G  53% /
+
+osama@linux:~$ ps aux --sort=-%mem | head -n 5
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+osama     2432  2.0  8.5 123456 67890 ?        S    12:25   0:01 firefox
+root      1011  0.5  2.0  45678 23456 ?        S    11:59   0:02 Xorg

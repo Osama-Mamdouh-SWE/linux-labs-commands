@@ -1,0 +1,29 @@
+osama@linux:~$ ps -e
+    PID TTY          TIME CMD
+      1 ?        00:00:01 systemd
+      2 ?        00:00:00 kthreadd
+   1024 ?        00:00:00 sshd
+   1350 pts/0    00:00:00 bash
+   1405 pts/0    00:00:00 ps
+
+osama@linux:~$ sleep 300 & 
+[1] 1410
+
+osama@linux:~$ ps -e | grep sleep
+   1410 pts/0    00:00:00 sleep
+
+osama@linux:~$ kill 1410
+
+osama@linux:~$ ps -e | grep sleep
+
+
+osama@linux:~$ top
+top - 11:25:53 up  1:23,  1 user,  load average: 0.00, 0.01, 0.05
+Tasks: 157 total,   1 running, 156 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  2.3 us,  0.5 sy,  0.0 ni, 97.0 id,  0.0 wa,  0.0 hi,  0.2 si,  0.0 st
+MiB Mem :   7972.0 total,   5230.0 free,   1450.0 used,   1292.0 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6000.0 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+ 1350 osama     20   0   10000   5000   3500 S   0.0  0.1   0:00.01 bash
+ 1420 osama     20   0   11000   5200   3600 R   0.3  0.1   0:00.02 top

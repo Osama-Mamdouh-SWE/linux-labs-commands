@@ -1,0 +1,16 @@
+osama@linux:~$ touch secret.txt
+
+osama@linux:~$ ls -l secret.txt
+-rw-r--r-- 1 osama osama 0 Aug 21 10:45 secret.txt
+
+osama@linux:~$ chmod 600 secret.txt
+
+osama@linux:~$ ls -l secret.txt
+-rw------- 1 osama osama 0 Aug 21 10:45 secret.txt
+
+osama@linux:~$ touch hello.sh
+
+osama@linux:~$ chmod a+x hello.sh
+
+osama@linux:~$ ls -l hello.sh
+-rwx--x--x 1 osama osama 0 Aug 21 10:46 hello.sh

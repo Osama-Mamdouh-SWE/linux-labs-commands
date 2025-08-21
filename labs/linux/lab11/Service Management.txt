@@ -1,0 +1,14 @@
+osama@linux:~$ systemctl status ssh
+● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled)
+     Active: active (running)
+
+osama@linux:~$ journalctl -xe | tail -n 10
+Aug 21 12:10:01 osama CRON[2034]: pam_unix(cron:session): session opened for user root
+
+osama@linux:~$ journalctl -p err -b
+
+
+osama@linux:~$ systemctl list-unit-files --type=service | grep enabled
+ssh.service                         enabled
+cron.service                        enabled

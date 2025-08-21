@@ -1,0 +1,32 @@
+osama@linux:~$ whoami
+osama
+
+osama@linux:~$ id
+uid=1000(osama) gid=1000(osama) groups=1000(osama),27(sudo),4(adm)
+
+osama@linux:~$ pwd
+/home/osama
+
+osama@linux:~$ cat ~/.bashrc
+
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
+
+alias ll='ls -la'
+alias gs='git status'
+
+
+
+osama@linux:~$ ls -la ~
+total 48
+drwxr-xr-x  6 osama osama 4096 Aug 21 11:10 .
+drwxr-xr-x  3 root  root  4096 Aug 20 15:00 ..
+-rw-------  1 osama osama  220 Aug 20 15:00 .bash_history
+-rw-r--r--  1 osama osama 3526 Aug 20 15:00 .bashrc
+drwx------  3 osama osama 4096 Aug 21 10:00 .cache
+drwx------  4 osama osama 4096 Aug 21 10:30 .config
+-rw-r--r--  1 osama osama  807 Aug 20 15:00 .profile
+drwx------  2 osama osama 4096 Aug 20 15:10 Documents
+drwxr-xr-x  3 osama osama 4096 Aug 21 10:45 my_projects

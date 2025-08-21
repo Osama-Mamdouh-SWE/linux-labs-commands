@@ -1,0 +1,25 @@
+osama@linux:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        50G   25G   23G  53% /
+tmpfs           3.9G  2.0M  3.9G   1% /run
+/dev/sdb1       200G   80G  111G  42% /mnt/data
+
+osama@linux:~$ du -sh ~
+2.1G    /home/osama
+
+osama@linux:~$ du -h --max-depth=1 ~ | sort -hr | head -n 5
+1.2G    /home/osama/Documents
+600M    /home/osama/Downloads
+250M    /home/osama/Videos
+50M     /home/osama/Pictures
+20M     /home/osama/Music
+
+osama@linux:~$ du -h ~/Documents/intro.txt
+4.0K    /home/osama/Documents/intro.txt
+
+osama@linux:~$ lsblk
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda      8:0    0   50G  0 disk 
+└─sda1   8:1    0   50G  0 part /
+sdb      8:16   0  200G  0 disk 
+└─sdb1   8:17   0  200G  0 part /mnt/data

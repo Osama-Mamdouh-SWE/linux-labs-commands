@@ -1,0 +1,11 @@
+osama@linux:~$ nano shopping_list.txt
+
+osama@linux:~$ echo "Chicken" >> shopping_list.txt
+
+osama@linux:~$ cat shopping_list.txt
+Milk
+Bread
+Eggs
+Apples
+Rice
+Chicken

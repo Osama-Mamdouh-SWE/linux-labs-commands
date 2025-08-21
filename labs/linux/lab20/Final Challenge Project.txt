@@ -1,0 +1,28 @@
+osama@linux:~$ mkdir -p web_project/{html,css,js}
+
+osama@linux:~$ nano web_project/html/index.html
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Web Project</title>
+</head>
+<body>
+  <h1>Hello from my project!</h1>
+</body>
+</html>
+
+osama@linux:~$ chmod -R 755 web_project
+
+osama@linux:~$ nano backup_web.sh
+
+#!/bin/bash
+tar -czf web_project_backup.tar.gz web_project
+
+osama@linux:~$ chmod +x backup_web.sh
+osama@linux:~$ ./backup_web.sh
+
+osama@linux:~$ ls -lh web_project_backup.tar.gz
+-rw-r--r-- 1 osama osama 2.0K Aug 21 12:50 web_project_backup.tar.gz
+
+osama@linux:~$ nano web_project/README.md

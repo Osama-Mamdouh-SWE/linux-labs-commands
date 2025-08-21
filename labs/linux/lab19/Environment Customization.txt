@@ -1,0 +1,18 @@
+osama@linux:~$ printenv | head -n 5
+SHELL=/bin/bash
+USER=osama
+HOME=/home/osama
+
+osama@linux:~$ echo $PATH
+/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin
+
+osama@linux:~$ echo "alias ll='ls -la'" >> ~/.bashrc
+
+osama@linux:~$ export PS1="[\u@\h \W]\$ "
+[osama@linux ~]$ 
+
+[osama@linux ~]$ source ~/.bashrc
+[osama@linux ~]$ ll
+total 24
+-rw-r--r-- 1 osama osama  220 Aug 20 15:00 .bash_logout
+-rw-r--r-- 1 osama osama 3526 Aug 20 15:00 .bashrc

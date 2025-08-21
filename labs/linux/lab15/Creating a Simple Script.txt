@@ -1,0 +1,17 @@
+osama@linux:~$ nano system_info.sh
+#!/bin/bash
+echo "Date and Time: $(date)"
+echo "Username: $USER"
+echo "Current Directory: $(pwd)"
+echo "Available Disk Space:"
+df -h | grep '/$'
+
+osama@linux:~$ chmod +x system_info.sh
+
+osama@linux:~$ ./system_info.sh
+Date and Time: Thu Aug 21 12:35:12 UTC 2025
+Username: osama
+Current Directory: /home/osama
+Available Disk Space:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        50G   25G   23G  53% /

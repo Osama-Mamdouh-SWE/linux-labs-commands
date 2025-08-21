@@ -1,0 +1,15 @@
+osama@linux:~$ cd my_projects/documents
+
+osama@linux:~/my_projects/documents$ touch intro.txt
+
+osama@linux:~/my_projects/documents$ nano intro.txt
+
+osama@linux:~/my_projects/documents$ cat intro.txt
+My name is Osama.
+I am learning Linux.
+I enjoy practicing labs.
+
+osama@linux:~/my_projects/documents$ less intro.txt
+My name is Osama.
+I am learning Linux.
+I enjoy practicing labs.

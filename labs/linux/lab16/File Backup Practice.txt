@@ -1,0 +1,11 @@
+osama@linux:~$ mkdir ~/backup
+
+osama@linux:~$ cp -r ~/my_projects/* ~/backup/
+
+osama@linux:~$ tar -czf important_backup.tar.gz ~/my_projects
+
+osama@linux:~$ mkdir ~/restore2
+osama@linux:~$ tar -xzf important_backup.tar.gz -C ~/restore2
+
+osama@linux:~$ ls ~/restore2/home/osama/my_projects
+backup  documents  scripts  file1.txt  file2.txt  file3.txt  file4.txt  file5.txt

@@ -1,0 +1,9 @@
+osama@linux:~$ journalctl -n 20
+
+osama@linux:~$ journalctl | grep "error"
+Aug 21 12:01:22 osama sshd[1024]: error: PAM: Authentication failure
+
+osama@linux:~$ journalctl --since today
+
+
+osama@linux:~$ journalctl -f --since "30 seconds ago"

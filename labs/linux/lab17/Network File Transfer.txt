@@ -1,0 +1,14 @@
+osama@linux:~$ wget https://example.com -O sample.html
+--2025-08-21 12:40:02--  https://example.com/
+Saving to: ‘sample.html’
+
+osama@linux:~$ curl -I https://example.com
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+Content-Length: 1256
+
+osama@linux:~$ echo "Test file" > transfer.txt
+osama@linux:~$ mv transfer.txt ~/Documents/
+
+osama@linux:~$ ls -lh ~/Documents/transfer.txt
+-rw-r--r-- 1 osama osama 10 Aug 21 12:42 /home/osama/Documents/transfer.txt
